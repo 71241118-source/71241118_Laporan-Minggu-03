@@ -1,0 +1,23 @@
+Program Cek_Prima
+
+Deklarasi
+    n, i : integer
+    prima : boolean
+
+Deskripsi
+    INPUT n
+    IF n <= 1 THEN
+        OUTPUT "Bukan Prima"
+    ELSE
+        prima <- true
+        FOR i <- 2 TO n-1 DO
+            IF n mod i = 0 THEN
+                prima <- false
+            ENDIF
+        ENDFOR
+        
+        IF prima = true THEN
+            OUTPUT "Bilangan Prima"
+        ELSE
+            OUTPUT "Bukan Prima"
+        ENDIF
